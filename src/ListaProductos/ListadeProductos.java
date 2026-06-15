@@ -96,7 +96,7 @@ package ListaProductos;
 
         while (actual != null) {
             actual.getProducto().mostrarProducto();
-            System.out.println("---------------------------");
+            System.out.println("------------------------");
             actual = actual.getSiguiente();
         }
     }
@@ -115,7 +115,7 @@ package ListaProductos;
             double costo = actual.getProducto().calcularCostoTotal();
             System.out.println("Producto: " + actual.getProducto().getNombre());
             System.out.println("Costo total: ₡" + costo);
-            System.out.println("---------------------------");
+            System.out.println("------------------------");
 
             totalAcumulado += costo;
             actual = actual.getSiguiente();
