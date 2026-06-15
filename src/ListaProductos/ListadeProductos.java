@@ -8,14 +8,14 @@ package ListaProductos;
         cabeza = null;
     }
 
-    // Insertar al inicio
+    // Agregar al inicio
     public void insertarInicio(Producto producto) {
         Nodo nuevo = new Nodo(producto);
         nuevo.setSiguiente(cabeza);
         cabeza = nuevo;
     }
 
-    // Insertar al final
+    // Agregar al final
     public void insertarFinal(Producto producto) {
         Nodo nuevo = new Nodo(producto);
 
@@ -56,7 +56,7 @@ package ListaProductos;
         }
     }
 
-    // Eliminar producto
+    // Eliminar el producto
     public void eliminar(String nombre) {
 
         if (cabeza == null) {
